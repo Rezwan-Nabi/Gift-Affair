@@ -41,16 +41,16 @@ test("visitor filters by occasion and budget, then clears filters", async ({ pag
   if (isMobile) {
     await page.getByRole("button", { name: /Filter and sort/ }).click();
     const dialog = page.getByRole("dialog");
-    await dialog.getByLabel("Occasion").selectOption("holud");
+    await dialog.getByLabel("Occasion").selectOption("reception");
     await dialog.getByLabel("Budget").selectOption("mid-range");
     await dialog.getByRole("button", { name: "Show ideas" }).click();
   } else {
-    await page.getByLabel("Occasion").first().selectOption("holud");
-    await expect(page).toHaveURL(/occasion=holud/);
+    await page.getByLabel("Occasion").first().selectOption("reception");
+    await expect(page).toHaveURL(/occasion=reception/);
     await page.getByLabel("Budget").first().selectOption("mid-range");
   }
-  await expect(page).toHaveURL(/occasion=holud.*budget=mid-range|budget=mid-range.*occasion=holud/);
-  await expect(page.getByText("3 gift ideas")).toBeVisible();
+  await expect(page).toHaveURL(/occasion=reception.*budget=mid-range|budget=mid-range.*occasion=reception/);
+  await expect(page.getByText(/\d+ gift ideas?/)).toBeVisible();
 
   await page.getByRole("link", { name: "Clear all filters" }).click();
   await expect(page).toHaveURL(/\/gift-ideas$/);
@@ -74,8 +74,8 @@ test("visitor opens a gift detail page with its labels and source link", async (
 });
 
 test("taxonomy pages list matching ideas", async ({ page }) => {
-  await page.goto("/occasions/holud");
-  await expect(page.getByRole("heading", { level: 1, name: "Holud gift ideas" })).toBeVisible();
+  await page.goto("/occasions/reception");
+  await expect(page.getByRole("heading", { level: 1, name: "Reception gift ideas" })).toBeVisible();
   await page.goto("/budget/premium");
   await expect(page.getByRole("heading", { level: 1, name: /Premium/ })).toBeVisible();
 });

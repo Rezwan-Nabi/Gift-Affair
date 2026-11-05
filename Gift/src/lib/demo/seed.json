@@ -57,15 +57,6 @@
   ],
   "tags": [
     {
-      "id": "30bb559b-b5a3-5100-bbbf-e61840ee5bc6",
-      "name": "Holud",
-      "slug": "holud",
-      "tagType": "occasion",
-      "description": "Bright, joyful gifts for the turmeric ceremony.",
-      "sortOrder": 0,
-      "isActive": true
-    },
-    {
       "id": "aee6e544-064e-509b-84ac-1b543ea94083",
       "name": "Wedding Ceremony",
       "slug": "wedding-ceremony",
@@ -207,33 +198,6 @@
       "budgetSlug": "premium"
     },
     {
-      "id": "1f2c2c29-3986-5ec0-983e-6597180c7a8a",
-      "slug": "holud-dala-flower-tray",
-      "title": "Holud dala tray with fresh flowers",
-      "summary": "A decorated tray of flowers, sweets and small gifts, carried in for the holud.",
-      "description": "A holud dala is a decorated tray, often in yellow and orange, arranged with marigolds, sweets, turmeric paste and small gifts for the bride or groom. Florists and event decorators can make one to order, or you can arrange your own.\n\nCoordinate with the family: some holud ceremonies have a set number of trays.",
-      "whyThoughtful": "It's part of the ceremony itself, so it's used and seen on the day rather than put away.",
-      "keywords": "dala, tray, marigold, flowers, sweets, turmeric, gaye holud",
-      "mainImagePath": "/images/gifts/holud-dala-flower-tray.jpg",
-      "imageAlt": "Sample illustration for holud dala tray with fresh flowers",
-      "externalUrl": null,
-      "sourceName": null,
-      "isFeatured": false,
-      "daysAgo": 9,
-      "art": "tray",
-      "categorySlugs": [
-        "gift-hampers"
-      ],
-      "occasionSlugs": [
-        "holud"
-      ],
-      "recipientSlugs": [
-        "the-bride",
-        "the-groom"
-      ],
-      "budgetSlug": "mid-range"
-    },
-    {
       "id": "38faf017-7b3a-550f-ac39-847a6f9d928b",
       "slug": "wedding-date-star-map",
       "title": "Star map of their wedding night",
@@ -280,7 +244,6 @@
         "home-and-living"
       ],
       "occasionSlugs": [
-        "holud",
         "wedding-ceremony"
       ],
       "recipientSlugs": [
@@ -315,33 +278,6 @@
       ],
       "recipientSlugs": [
         "the-couple"
-      ],
-      "budgetSlug": "mid-range"
-    },
-    {
-      "id": "463addc4-7040-5a3a-8767-a457228c3794",
-      "slug": "holud-self-care-hamper",
-      "title": "Self-care hamper for the holud week",
-      "summary": "Gentle skincare, herbal tea and a soft towel for the busy days before the wedding.",
-      "description": "The days around the holud are long and full. A hamper with fragrance-free skincare, herbal tea, a sleep mask and a soft towel gives the bride or groom a moment to rest.\n\nAvoid strong fragrances and anything that might react with mehendi or turmeric paste.",
-      "whyThoughtful": "It looks after the person, not just the occasion.",
-      "keywords": "self care, spa, skincare, tea, relax, mehendi",
-      "mainImagePath": "/images/gifts/holud-self-care-hamper.jpg",
-      "imageAlt": "Sample illustration for self-care hamper for the holud week",
-      "externalUrl": null,
-      "sourceName": null,
-      "isFeatured": false,
-      "daysAgo": 6,
-      "art": "hamper",
-      "categorySlugs": [
-        "gift-hampers"
-      ],
-      "occasionSlugs": [
-        "holud"
-      ],
-      "recipientSlugs": [
-        "the-bride",
-        "the-groom"
       ],
       "budgetSlug": "mid-range"
     },
@@ -431,7 +367,7 @@
       "slug": "groom-grooming-kit",
       "title": "Grooming kit in a wooden case",
       "summary": "A beard oil, comb, and shaving set in a case he can keep on the shelf.",
-      "description": "A practical gift for the groom before the holud: a quality comb, a gentle beard oil or shaving cream and a small mirror, packed in a reusable wooden case.",
+      "description": "A practical gift for the groom before the wedding: a quality comb, a gentle beard oil or shaving cream and a small mirror, packed in a reusable wooden case.",
       "whyThoughtful": "It's useful during the wedding days and long after.",
       "keywords": "grooming, beard, shaving, men, kit",
       "mainImagePath": "/images/gifts/groom-grooming-kit.jpg",
@@ -444,9 +380,7 @@
       "categorySlugs": [
         "gift-hampers"
       ],
-      "occasionSlugs": [
-        "holud"
-      ],
+      "occasionSlugs": [],
       "recipientSlugs": [
         "the-groom"
       ],
@@ -633,7 +567,6 @@
         "keepsakes"
       ],
       "occasionSlugs": [
-        "holud",
         "wedding-ceremony"
       ],
       "recipientSlugs": [
@@ -643,23 +576,6 @@
     }
   ],
   "guides": [
-    {
-      "id": "5d156d6c-1f4a-5abc-8eeb-49f3246f177d",
-      "slug": "holud-gifts-that-feel-personal",
-      "title": "Holud gifts that feel personal",
-      "introduction": "The holud is the most colourful day of the wedding. These gifts suit its energy and look after the bride or groom in the busy days around it.",
-      "content": "The holud is playful and close-knit, so gifts tend to be smaller and more personal than on the wedding day.\n\nIf you're family, a dala tray is part of the ceremony itself. If you're a friend, something that helps the bride or groom rest is always welcome.\n\nWhatever you choose, keep the colours bright and the wrapping easy to open in a crowd.",
-      "coverImagePath": "/images/guides/holud-gifts-that-feel-personal.jpg",
-      "coverImageAlt": "Sample cover illustration for the guide Holud gifts that feel personal",
-      "giftSlugs": [
-        "holud-dala-flower-tray",
-        "holud-self-care-hamper",
-        "groom-grooming-kit",
-        "brass-diya-candle-set",
-        "bridal-jewellery-box"
-      ],
-      "daysAgo": 2
-    },
     {
       "id": "9c5226c9-7536-55bd-8cba-3b78a15851e8",
       "slug": "thoughtful-gifts-on-a-budget",

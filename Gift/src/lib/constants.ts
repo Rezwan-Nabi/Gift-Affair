@@ -1,7 +1,7 @@
 export const SITE_NAME = "The Gift Affair"; // working name from the PRD — change before launch
 export const SITE_TAGLINE = "Find a gift worth remembering.";
 export const SITE_DESCRIPTION =
-  "Curated wedding gift ideas for the holud, the wedding and the reception, organised by recipient, category and budget.";
+  "Curated wedding gift ideas for the wedding and reception, organised by recipient, category and budget.";
 
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
 

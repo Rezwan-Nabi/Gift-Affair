@@ -14,7 +14,7 @@ const META: Record<ListingKind, { base: string; crumb: string; title: (n: string
     base: "/categories",
     crumb: "Categories",
     title: (n) => n,
-    intro: (n) => `${n} for weddings, holuds and receptions.`,
+    intro: (n) => `${n} for weddings and receptions.`,
   },
   occasion: {
     base: "/occasions",

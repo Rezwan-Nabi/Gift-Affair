@@ -22,7 +22,6 @@ export function accentAt(index: number): Accent {
 }
 
 const OCCASION_ACCENTS: Record<string, Accent> = {
-  holud: "sunshine",
   "wedding-ceremony": "coral",
   reception: "lavender",
 };

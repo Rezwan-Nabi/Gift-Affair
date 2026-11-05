@@ -14,8 +14,8 @@ import {
 
 describe("parseFilters", () => {
   it("reads valid values and defaults the rest", () => {
-    const f = parseFilters({ q: "  kantha ", occasion: "holud", sort: "newest", page: "2" });
-    expect(f).toEqual({ ...EMPTY_FILTERS, q: "kantha", occasion: "holud", sort: "newest", page: 2 });
+    const f = parseFilters({ q: "  kantha ", occasion: "reception", sort: "newest", page: "2" });
+    expect(f).toEqual({ ...EMPTY_FILTERS, q: "kantha", occasion: "reception", sort: "newest", page: 2 });
   });
 
   it("ignores malformed slugs, sorts and pages", () => {
@@ -28,7 +28,7 @@ describe("parseFilters", () => {
 
   it("accepts URLSearchParams and array values", () => {
     expect(parseFilters(new URLSearchParams("recipient=the-bride")).recipient).toBe("the-bride");
-    expect(parseFilters({ occasion: ["reception", "holud"] }).occasion).toBe("reception");
+    expect(parseFilters({ occasion: ["wedding-ceremony", "reception"] }).occasion).toBe("wedding-ceremony");
   });
 
   it("caps the search length", () => {
@@ -38,8 +38,8 @@ describe("parseFilters", () => {
 
 describe("filtersToQuery", () => {
   it("drops defaults and resets the page when a filter changes", () => {
-    const f = { ...EMPTY_FILTERS, occasion: "holud", page: 3 };
-    expect(filtersToQuery(f, { budget: "premium" })).toBe("?occasion=holud&budget=premium");
+    const f = { ...EMPTY_FILTERS, occasion: "reception", page: 3 };
+    expect(filtersToQuery(f, { budget: "premium" })).toBe("?occasion=reception&budget=premium");
   });
 
   it("keeps an explicit page", () => {
@@ -58,7 +58,7 @@ describe("filtersToQuery", () => {
 
 describe("activeFilterCount", () => {
   it("counts search and each facet", () => {
-    expect(activeFilterCount({ ...EMPTY_FILTERS, q: "x", occasion: "holud", budget: "premium" })).toBe(3);
+    expect(activeFilterCount({ ...EMPTY_FILTERS, q: "x", occasion: "reception", budget: "premium" })).toBe(3);
     expect(activeFilterCount({ ...EMPTY_FILTERS, sort: "newest", page: 4 })).toBe(0);
   });
 });
@@ -88,9 +88,15 @@ describe("filterGifts (budget, occasion, category, recipient)", () => {
   });
 
   it("combines occasion and budget", () => {
-    const r = filterGifts(demoGifts, { ...EMPTY_FILTERS, occasion: "holud", budget: "mid-range" });
+    const r = filterGifts(demoGifts, { ...EMPTY_FILTERS, occasion: "reception", budget: "mid-range" });
     expect(r.gifts.map((g) => g.slug).sort()).toEqual(
-      ["groom-grooming-kit", "holud-dala-flower-tray", "holud-self-care-hamper"].sort(),
+      [
+        "illustrated-couple-portrait",
+        "jamdani-table-runner",
+        "personalised-home-nameplate",
+        "photo-frame-for-first-dance",
+        "tea-lovers-hamper",
+      ].sort(),
     );
   });
 
@@ -101,7 +107,7 @@ describe("filterGifts (budget, occasion, category, recipient)", () => {
 
   it("matches categories and recipients", () => {
     const r = filterGifts(demoGifts, { ...EMPTY_FILTERS, category: "gift-hampers", recipient: "the-groom" });
-    expect(r.gifts.map((g) => g.slug).sort()).toEqual(["groom-grooming-kit", "holud-dala-flower-tray", "holud-self-care-hamper"].sort());
+    expect(r.gifts.map((g) => g.slug).sort()).toEqual(["groom-grooming-kit"].sort());
   });
 
   it("returns an empty result for no matches", () => {

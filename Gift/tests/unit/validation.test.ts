@@ -105,9 +105,9 @@ describe("taxonomy schemas", () => {
 
   it("requires a cover description when a guide has a cover", () => {
     const r = guideFormSchema.safeParse({
-      title: "Holud gifts",
-      slug: "holud-gifts",
-      introduction: "A guide to gifts for the holud ceremony.",
+      title: "Wedding gifts",
+      slug: "wedding-gifts",
+      introduction: "A guide to gifts for the wedding ceremony.",
       content: "",
       coverImagePath: "guides/cover.jpg",
       coverImageAlt: "",

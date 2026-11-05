@@ -4,7 +4,7 @@ import { ACCENT_BG, occasionAccent } from "@/lib/accents";
 import type { Tag } from "@/types";
 import SectionHeading from "./SectionHeading";
 
-/** One colour field per ceremony: yellow for the holud, coral for the wedding, lavender for the reception. */
+/** One colour field per ceremony. */
 export default function OccasionCollections({ occasions, counts }: { occasions: Tag[]; counts: Record<string, number> }) {
   return (
     <section aria-labelledby="occasions-heading" className="container-page py-16 md:py-20">

@@ -39,8 +39,7 @@ export default function Hero({ gifts, occasions }: Props) {
             Find a gift worth remembering.
           </motion.h1>
           <motion.p variants={rise} className="mt-6 max-w-xl text-lg text-plum/80 md:text-xl">
-            Curated ideas for the holud, the wedding and the reception, sorted by who it&apos;s for and what you&apos;d like
-            to spend.
+            Curated ideas for the wedding and the reception, sorted by who it&apos;s for and what you&apos;d like to spend.
           </motion.p>
           <motion.div variants={rise} className="mt-8 max-w-xl">
             <SearchForm id="hero-search" size="lg" label="Search gift ideas" placeholder="Try “kantha”, “mugs” or “bride”" />

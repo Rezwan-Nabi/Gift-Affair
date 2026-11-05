@@ -11,9 +11,9 @@ import type { GiftFilters, Taxonomy } from "@/types";
 type Props = {
   taxonomy: Taxonomy;
   filters: GiftFilters;
-  /** Path the filters apply to, e.g. /gift-ideas or /occasions/holud. */
+  /** Path the filters apply to, e.g. /gift-ideas or /occasions/reception. */
   basePath: string;
-  /** The facet fixed by the page (e.g. occasion on /occasions/holud); its control is hidden. */
+  /** The facet fixed by the page (e.g. occasion on /occasions/reception); its control is hidden. */
   locked?: FilterKey;
 };
 

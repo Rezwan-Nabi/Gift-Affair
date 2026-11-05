@@ -118,7 +118,7 @@ These are defaults to get you started. Each is easy to change.
 | Launch market and currency | Bangladesh; budget ranges in BDT: under ৳3,000 / ৳3,000–10,000 / over ৳10,000 | Admin → Occasions, recipients and budgets |
 | Show prices? | Optional. A price only shows with a currency and a "checked on" date (enforced by the form and the database) | Gift form |
 | Recommend or sell? | Recommend only. No cart, checkout or affiliate tracking | n/a |
-| Ceremonies | Holud, Wedding Ceremony, Reception | Admin |
+| Ceremonies | Wedding Ceremony, Reception | Admin |
 | Recipients | The Couple, The Bride, The Groom, The Family | Admin |
 | Saved ideas without an account | Not included (P2) | n/a |
 | Affiliate links | Not included. If you add them, disclose them on each gift page and in the Terms | `GiftDetail.tsx`, Terms page |
@@ -167,5 +167,5 @@ scripts/generate-seed.mjs
 
 - **Palette** (PRD §8.2): coral, lavender, orange, sunshine and sage accents on warm cream with deep plum text, defined as tokens in `globals.css`.
 - **Type:** Playfair Display for headings, Inter for text (via `next/font`).
-- **Signature details:** a bead "garland" in the five accent colours, like a holud marigold string, under the hero and above the footer, and one colour per ceremony (sunshine for the holud, coral for the wedding, lavender for the reception).
+- **Signature details:** a bead "garland" in the five accent colours under the hero and above the footer, with one colour per ceremony (coral for the wedding, lavender for the reception).
 - **Motion:** one entrance sequence in the hero, gentle image zoom on card hover, dialog and drawer transitions. All of it is reduced or off when the visitor asks for reduced motion.
